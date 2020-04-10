@@ -16,7 +16,6 @@ body{
 }
 
 .zoomInDown {
-    animation-duration: 3s;
-    /* animation-delay: 1s; */
-    animation-iteration-count: 6s;
+    animation-duration: 1.6s;
+    animation-delay: .7s;
   }

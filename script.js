@@ -1,9 +1,9 @@
 var startBtn = document.getElementById("startBtn");
+var submitBtn = document.querySelector("button.submitBtn");
+var secondsLeft = 6 * 15 + 1;
 var timerEl = document.getElementById("timer");
-var secondsLeft = (6 * 15 + 1);
 
-// Event Listeners for Main Buttons
-startBtn.addEventListener("click", startTimer);
+
 
 function startTimer() {
   // swap welcome msg w/ questions
@@ -16,6 +16,11 @@ function startTimer() {
 function setTimer() {
   var countdown = setInterval(function() {
     secondsLeft--;
-    timerEl.textContent = "Time : " + secondsLeft;
+    timerEl.textContent = "Time: " + secondsLeft;
+
   }, 1000);
 }
+
+
+// Event Listeners for Main Buttons
+startBtn.addEventListener("click", startTimer);
